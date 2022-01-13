@@ -1,0 +1,301 @@
+/* common */
+* {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.material-icons-outlined {
+    color: var(--yellow);
+}
+
+hr {
+    border: 1px solid var(--gray300);
+    background-color: var(--gray300);
+}
+
+/* 바로구매 */
+.detail-buy {
+    position: relative;
+}
+
+/* 바로구매 > 상품 이미지*/
+.buy-left {
+    display: inline-block;
+    padding-right: 20px;
+    width: 580px;
+}
+
+.detail-image {
+    display: inline-block;
+    width: 580px;
+}
+
+/* 바로구매 > 상품 가격 및 구매 버튼*/
+.buy-right {
+    position: absolute;
+    display: inline-block;
+    width: 550px;
+    height: 580px;
+    border: 1px solid var(--gray300);
+    padding: 0 24px;
+}
+.detail-title {
+    margin-top: 100px;
+}
+
+/* 상품 가격 및 구매 버튼 > 평점 */
+.title-star {
+    margin-top: 15px;
+    height: 30px;
+    position: relative;
+}
+
+.star-count {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 145px;
+}
+
+/* 가격 정보 */
+
+.price-box {
+    margin-top: 30px;
+}
+
+.price-top {
+    position: relative;
+}
+
+.item-price {
+    position: absolute;
+    right: 10px;
+}
+
+.price-bottom {
+    position: relative;
+    margin-top: 20px;
+}
+.item-charge {
+    position: absolute;
+    right: 10px;
+}
+
+/* 상품 가격 및 구매 버튼 > 수량 및 총 금액 */
+.detail-count {
+    width: 100%;
+    margin-top: 30px;
+    height: 120px;
+    background-color: var(--gray200);
+}
+
+.count-top {
+    position: relative;
+}
+
+.count-txt {
+    color: var(--gray600);
+    display: inline-block;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.count-txt:first-child {
+    left: 10px;
+}
+.count-txt:last-child {
+    right: 10px;
+}
+
+.count-bottom {
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+.item-count {
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    border: 1px solid var(--gray500);
+    background-color: var(--white);
+}
+.minus {
+    border-radius: 0;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    border-right: 1px solid var(--gray500);
+}
+.count-field {
+    display: inline-block;
+    width: 78.5px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 11px;
+}
+
+.plus {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0;
+    border: none;
+    border-left: 1px solid var(--gray500);
+}
+
+.total-price {
+    position: absolute;
+    right: 20px;
+}
+/* 상품 가격 및 구매 버튼 > 구매버튼 */
+.buy-btn {
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* 상품정보 */
+
+.detail-info {
+    margin-top: 30px;
+}
+
+.info-title {
+    margin-bottom: 5px;
+}
+
+.info-box {
+    height: auto;
+    width: 1138px;
+    padding: 30px;
+    border: 1px solid var(--gray300);
+    border-top: 2px solid var(--gray600);
+}
+.info-exp {
+    padding-bottom: 20px;
+}
+.info-box > div {
+    padding-top: 10px;
+}
+.info-box > div:first-child {
+    padding-top: 0;
+}
+
+/* 상품 상세정보 이미지, 더보기 버튼 */
+.image-container {
+    text-align: center;
+}
+.info-image {
+    margin-top: 30px;
+}
+
+.show1 {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.show2 {
+    height: auto;
+}
+
+.image-btn {
+    margin-top: 25px;
+    background-color: var(--white);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+/* 구매후기, 구매후기 더보기 버튼 */
+
+.review-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.review-title {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.review-plus {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 77px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+}
+
+.star-container {
+    height: auto;
+    width: 1138px;
+    padding: 30px;
+    border: 1px solid var(--gray300);
+    border-top: 2px solid var(--gray600);
+}
+
+.star-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.star-avg {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: 150px;
+}
+.review-count {
+    position: absolute;
+    display: inline-block;
+    top: 2px;
+    left: 182px;
+}
+
+/*리뷰 란*/
+
+#review-contents div {
+    display: inline-block;
+}
+
+#review-list {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray300);
+    position: relative;
+}
+
+.review-img-wrap {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.review-img {
+    width: 100%;
+}
+
+#review-list-star .inner-star {
+    font-size: 17px;
+    text-indent: -7px;
+}
+
+.reviewList-top {
+    position: absolute;
+    top: 15px;
+    left: 160px;
+}
+
+.review-writer {
+    position: absolute;
+    top: 40px;
+    left: 155px;
+}
+
+.review-text {
+    position: absolute;
+    top: 80px;
+    left: 155px;
+}

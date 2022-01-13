@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>위대한캣츠비-상품 상세 페이지</title>
+        <link rel="stylesheet" href="../../css/user/prodlist.css" />
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/user/input.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- 컨테이너 -->
+        <div class="container">
+            <!-- 바로구매 -->
+            <div class="detail-buy">
+                <div class="buy-left">
+                    <img src="../../img/user/prodlist/item-detail-image.jpg" alt="상품이미지" id="detail-image" class="detail-image" />
+                </div>
+                <div class="buy-right">
+                    <h2 id="detail-title" class="detail-title text-2xl">츄통령 바삭츄 동결건조 닭가슴살 55g</h2>
+                    <div class="title-star">
+                        <span class="material-icons-outlined"> star </span>
+                        <span class="material-icons-outlined"> star </span>
+                        <span class="material-icons-outlined"> star </span>
+                        <span class="material-icons-outlined"> star </span>
+                        <span class="material-icons-outlined"> star_rate </span>
+                        <span id="star-count" class="star-count text-sm" style="color: var(--blue200)">(1,842)</span>
+                    </div>
+                    <hr />
+                    <div class="price-box">
+                        <div class="price-top">
+                            <span>판매가</span>
+                            <span id="item-price" class="text-xl bold item-price">6,500원</span>
+                        </div>
+                        <div class="price-bottom">
+                            <span>배송비</span>
+                            <span id="item-charge" class="item-charge">3,000원</span>
+                        </div>
+                    </div>
+                    <div class="detail-count">
+                        <div class="count-top">
+                            <span class="count-txt text-sm">수량</span>
+                            <span class="count-txt text-sm">총 상품 금액</span>
+                        </div>
+                        <div class="count-bottom">
+                            <span class="item-count">
+                                <button id="minus" class="minus text-3xl">－</button>
+                                <div id="count-field" class="count-field">1</div>
+                                <button id="plus " class="plus text-3xl">+</button>
+                            </span>
+                            <span id="total-price" class="total-price text-2xl bold">9,500원</span>
+                        </div>
+                    </div>
+                    <a href="#"><button class="button-full buy-btn bold">바로 구매</button></a>
+                </div>
+            </div>
+            <!-- 상품정보 -->
+            <div class="detail-info">
+                <h2 class="text-lg info-title">상품정보</h2>
+                <div class="info-box">
+                    <div class="bold">설명</div>
+                    <div id="info-exp" class="info-exp">
+                        츄통령 바삭츄 동결건조 닭가슴살은 닭가슴살 100%를 사용하여 만든 동결건조 간식입니다. 동결 과정을 거쳐 원물의 영양소
+                        및 풍미를 유지하고 있으며, 동결 후 2단계 진공 건조를 통해 보존성, 안전성, 신선함을 잡았습니다.
+                    </div>
+                    <div class="bold">특징</div>
+                    <div id="fea" class="fea">
+                        - 닭가슴살 100%를 사용하여 만든 동결건조 간식<br />
+                        - 저지방 고단백으로 풍부한 영양 공급 가능<br />
+                        - 필수 아미노산, 타우린, 비타민A, B 함유<br />
+                    </div>
+                </div>
+            </div>
+            <!-- 상품 상세정보 이미지, 더보기 버튼 -->
+            <div class="image-container">
+                >
+                <div id="info-image" class="info-image show1">
+                    <div class="content">
+                        <img src="../../img/user/prodlist/item-info-image.jpg" alt="상품상세정보이미지" />
+                    </div>
+                </div>
+                <button id="image-btn" class="button-half image-btn bold">상품 정보 더보기</button>
+            </div>
+            <!-- 구매후기, 구매후기 더보기 버튼 -->
+            <div class="review-container">
+                <h2 class="text-lg review-title">구매후기</h2>
+                <a href="#" class="review-plus text-sm bold">+</a>
+                <div class="star-container">
+                    <div class="star-box">
+                        <span id="stars" class="stars">
+                            <span class="material-icons-outlined"> star </span>
+                            <span class="material-icons-outlined"> star </span>
+                            <span class="material-icons-outlined"> star </span>
+                            <span class="material-icons-outlined"> star </span>
+                            <span class="material-icons-outlined"> star_rate </span>
+                        </span>
+                        <star id="star-avg" class="bold text-lg star-avg">4.8</star>
+                        <span id="star-count" class="review-count">(1,842)</span>
+                    </div>
+                    <ul id="review-contents">
+                        <li id="review-list">
+                            <div class="review-img-wrap">
+                                <img src="../../img/user/prodlist/detail-review1.jpg" alt="리뷰이미지" id="review-img" class="review-img" />
+                            </div>
+                            <div class="reviewList-top">
+                                <span id="review-list-star">
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star_rate </span>
+                                </span>
+                                <span class="text-sm">구매인증됨</span>
+                                <span id="review-date" class="text-sm">2021.12.23</span>
+                            </div>
+                            <div id="review-writer" class="text-sm review-writer">노*재</div>
+                            <div id="review-text" class="review-text">항상 잘먹고 있어요~ <br />우리 찬민이가 좋아해요~</div>
+                        </li>
+                    </ul>
+                    <ul id="review-contents">
+                        <li id="review-list">
+                            <div class="review-img-wrap">
+                                <img
+                                    src="../../img/user/prodlist/detail-review2.jpg"
+                                    alt="리뷰이미지"
+                                    id="review-img
+                            "
+                                    class="review-img"
+                                />
+                            </div>
+                            <div class="reviewList-top">
+                                <span id="review-list-star">
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star </span>
+                                    <span class="material-icons-outlined inner-star"> star_rate </span>
+                                </span>
+                                <span class="text-sm">구매인증됨</span>
+                                <span id="review-date" class="text-sm">2021.12.22</span>
+                            </div>
+                            <div id="review-writer" class="text-sm review-writer">전*민</div>
+                            <div id="review-text" class="review-text">저녁은 항상 이걸로 먹어요!<br />먹어봤는데 너무 맛있어요!</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const imageBtn = document.getElementById('image-btn');
+            const imgContent = document.getElementById('info-image');
+
+            document.addEventListener('DOMContentLoaded', () => {
+                imageBtn.addEventListener('click', () => {
+                    if (imgContent.classList.contains('show1')) {
+                        imgContent.classList.remove('show1');
+                        imgContent.classList.add('show2');
+                        imageBtn.innerText = '상품 정보 숨기기';
+                    } else if (imgContent.classList.contains('show2')) {
+                        imgContent.classList.remove('show2');
+                        imgContent.classList.add('show1');
+                        imageBtn.innerText = '상품 정보 더보기';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
