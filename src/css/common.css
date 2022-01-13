@@ -1,0 +1,85 @@
+/**
+ * @filename    : common.css
+ * @author      : 김우영, 노희재, 이병민, 이슬기, 전찬민
+ * @description : 공통 디자인 시스템
+ */
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    outline: none;
+}
+
+/* 1) page-setting 
+------------------------------*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*2) color */
+:root {
+    --primary: #f76b8a;
+    --blue100: #c7ddff;
+    --blue200: #006ca9;
+    --blue300: #0066ff;
+    --yellow: #ffb400;
+    --white: #fff;
+    --black: #1c1c1c;
+    --gray100: #eeeeee;
+    --gray200: #e1e1e1;
+    --gray300: #c4c4c4;
+    --gray400: #a3a3a3;
+    --gray500: #808080;
+    --gray600: #494949;
+}
+
+/*3) Typography 
+------------------------------*/
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+.text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+.text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+}
+.text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+}
+.bold {
+    font-weight: bold;
+}
