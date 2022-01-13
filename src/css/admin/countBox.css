@@ -1,0 +1,27 @@
+/**
+ * @filename    : countBox.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지의 정렬한 데이터를 표시하는 영역 CSS
+ */
+
+/* countBox
+------------------------------*/
+.countBox {
+    width: 100%;
+}
+.countBox::after {
+    content: '';
+    clear: both;
+}
+.countBox-left {
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    padding: 8px 10px;
+    background-color: var(--blue100);
+}
+.countBox-right {
+    float: left;
+    border-radius: 0px 5px 5px 0px;
+    padding: 8px 10px;
+    background-color: var(--gray100);
+}

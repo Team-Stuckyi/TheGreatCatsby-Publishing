@@ -1,0 +1,20 @@
+/**
+ * @filename    : page-info-wrapper.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지의 제목을 정의하는 영역 CSS
+ */
+
+/* page-info-wrapper
+------------------------------*/
+.page-info-wrapper {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+/* 얇은 hr */
+.page-info-wrapper hr {
+    border-width: 1.5px 0px 0px 0px;
+    border-style: solid;
+    border-color: var(--gray600);
+    opacity: 0.3;
+    height: 1px;
+}

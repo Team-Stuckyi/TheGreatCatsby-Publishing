@@ -1,0 +1,31 @@
+/**
+ * @filename    : pagination.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지 pagination CSS
+ */
+
+/* pagination
+------------------------------*/
+.pagination {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    border-radius: 5px;
+    background-color: var(--blue300);
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

@@ -1,0 +1,23 @@
+/**
+ * @filename    : table.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지 table CSS
+ */
+
+/* table
+------------------------------*/
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Table Header, Table Data Common style */
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+/* Table Header */
+th {
+    background-color: #e1e1e1;
+}

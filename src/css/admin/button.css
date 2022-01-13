@@ -1,0 +1,28 @@
+/**
+ * @filename    : button.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지 버튼 CSS
+ */
+
+/* button
+------------------------------*/
+.btn {
+    border: none;
+    height: calc(100% - 50px);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--blue300);
+}
+.btn-full {
+    width: 100%;
+}
+.btn-half {
+    width: 50%;
+}
+.btn-triple {
+    width: 33.3%;
+}
+.btn-quarter {
+    width: 25%;
+}

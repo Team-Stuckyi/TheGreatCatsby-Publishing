@@ -1,0 +1,26 @@
+/**
+ * @filename    : select.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지 select css
+ */
+
+/* select
+------------------------------*/
+.select {
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--gray200);
+}
+.select-full {
+    width: 100%;
+}
+.select-half {
+    width: 50%;
+}
+.select-triple {
+    width: 33.3%;
+}
+.select-quarter {
+    width: 25%;
+}

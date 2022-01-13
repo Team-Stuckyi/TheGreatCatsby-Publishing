@@ -1,0 +1,28 @@
+/**
+ * @filename    : input.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지 input CSS
+ */
+
+/* input
+------------------------------*/
+.input {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 0;
+}
+.input-full {
+    width: calc(100% - 42px);
+}
+
+.input-half {
+    width: calc(50% - 42px);
+}
+
+.input-triple {
+    width: calc(33.3% - 42px);
+}
+
+.input-quarter {
+    width: calc(25% - 42px);
+}

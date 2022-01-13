@@ -1,0 +1,19 @@
+/**
+ * @filename    : sort-container.css
+ * @author      : 이병민, 김우영
+ * @description : 관리자 페이지의 정렬, 검색 영역 CSS
+ */
+
+/* sort-container
+------------------------------*/
+.sort-container {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search-container {
+    margin: 0px 0 50px 0;
+    width: 100%;
+    display: flex;
+}
