@@ -1,0 +1,20 @@
+/* input common */
+.input {
+    border: 1px solid #f76b8a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* input-size */
+.input-full {
+    width: 350px;
+    height: 38px;
+}
+.input-middle {
+    width: 270px;
+    height: 38px;
+}
+.input-half {
+    width: 175px;
+    height: 38px;
+}

@@ -1,0 +1,22 @@
+/* button common */
+button {
+    border: 1px solid #f76b8a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button size */
+.button-full {
+    width: 100%;
+    height: 48px;
+}
+
+.button-middle {
+    width: 75%;
+    height: 48px;
+}
+
+.button-half {
+    width: 50%;
+    height: 48px;
+}

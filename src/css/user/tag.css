@@ -1,0 +1,33 @@
+/* 비활성화 태그 */
+.tag-a {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.tag-span {
+    border: 1px solid #eeeeee;
+    border-radius: 22px;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 7px 17px 7px 17px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*활성화 태그*/
+.tag-active-a {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+}
+.tag-active-span {
+    border: 1px solid #f76b8a;
+    border-radius: 22px;
+    background-color: #f76b8a;
+    text-align: center;
+    padding: 7px 17px 7px 17px;
+    display: inline-block;
+    margin-right: 10px;
+}
