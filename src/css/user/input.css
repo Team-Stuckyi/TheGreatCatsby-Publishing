@@ -7,14 +7,19 @@
 
 /* input-size */
 .input-full {
-    width: 350px;
+    width: calc(100% - 8px);
     height: 38px;
 }
 .input-middle {
-    width: 270px;
+    width: calc(75% - 8px);
     height: 38px;
 }
 .input-half {
-    width: 175px;
+    width: calc(50% - 8px);
+    height: 38px;
+}
+
+.input-small {
+    width: calc(35% - 8px);
     height: 38px;
 }
