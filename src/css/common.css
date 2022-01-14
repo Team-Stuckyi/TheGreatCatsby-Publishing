@@ -11,6 +11,9 @@
     font-style: normal;
 }
 
+* {
+    font-family: 'InfinitySans-RegularA1';
+}
 
 a {
     color: var(--black);
@@ -23,7 +26,6 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    font-family: 'InfinitySans-RegularA1';
 }
 
 /*2) color */
