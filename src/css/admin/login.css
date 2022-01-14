@@ -1,27 +1,65 @@
+/**
+ * @filename    : login.css
+ * @author      : 김우영
+ * @description : 관리자 로그인 페이지 CSS
+ */
+
 body {
     width: 100%;
     height: 100%;
     background-color :#F5F5F5;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 주요 요소를 모두 감싸는 컨테이너 */
 .login-container {
     width: 350px;
+    height: 500px;
     margin: 15% auto;
     display: flex;
     flex-direction: column;
     padding: 0 40px;
 }
 
-.login-container > input {
-    height: 25px;
-    border: none;
+/* 로그인 컨테이너 내부 폼 요소를 감싸는 div */
+.login-form-field {
+    height: 100px;
+    width: 100%;
 }
 
-.login-container > input:focus {
-    outline: solid 2px var(--primary);
-}
-
+/* 로그인 컨테이너 내부 로고 이미지 */
 .login-inner-logo {
     margin: 0 auto;
     padding-bottom: 40px;
+}
+
+/* 로그인 컨테이너 하위 input 요소 */
+.login-container .input {
+    border-radius: 6px;
+    height: 25px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* 로그인 컨테이너 하위 input 요소 focus(클릭시) */
+.login-container .input:focus {
+    outline: solid 2px var(--primary);
+}
+
+/* 로그인 컨테이너 내부 Submit Button 부모 요소 */
+.login-form-field:nth-child(3) {
+    text-align: center;
+}
+
+/* 로그인 컨테이너 내부 Submit Button */
+.login-container .input[type="submit"] {
+    background-color: var(--primary);
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    color: var(--white);
 }
