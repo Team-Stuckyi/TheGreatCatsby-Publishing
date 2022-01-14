@@ -13,6 +13,7 @@
     border-radius: 5px;
     color: var(--white);
     background-color: var(--blue300);
+    cursor: pointer;
 }
 .btn-full {
     width: 100%;
