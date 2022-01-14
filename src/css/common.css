@@ -4,6 +4,14 @@
  * @description : 공통 디자인 시스템
  */
 
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 a {
     color: var(--black);
     text-decoration: none;
@@ -15,6 +23,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
+    font-family: 'InfinitySans-RegularA1';
 }
 
 /*2) color */

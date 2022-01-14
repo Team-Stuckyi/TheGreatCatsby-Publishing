@@ -26,3 +26,6 @@
 .btn-quarter {
     width: 25%;
 }
+.btn-danger {
+    background-color: var(--primary);
+}

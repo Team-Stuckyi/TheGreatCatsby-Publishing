@@ -20,3 +20,8 @@ button {
     width: 50%;
     height: 48px;
 }
+
+.button-small {
+    width: 35%;
+    height: 48px;
+}
