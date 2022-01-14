@@ -1,0 +1,232 @@
+/* 공통 영역 
+-------------------------------------------*/
+
+.pay-container {
+    border: 1px solid var(--gray300);
+    padding: 20px;
+    position: relative;
+}
+
+.pay-container > div {
+    padding: 30px;
+    width: 1100px;
+}
+
+/* 결제페이지 타이틀
+-------------------------------------------*/
+
+.status-now {
+    color: var(--primary);
+}
+
+.pay-container > .pay-status {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 200px;
+    padding: 0;
+}
+
+/* 배송지 입력 란
+-------------------------------------------*/
+
+.pay-info {
+    width: 1100px;
+}
+
+.addr-tabs {
+    border-top: 2px solid var(--gray500);
+    position: relative;
+}
+
+.addr {
+    display: none;
+}
+
+.addr-tabs button.active {
+    color: var(--primary);
+}
+
+.addr.active {
+    display: block;
+}
+
+.lastTitle,
+.newTitle {
+    width: 110px;
+    height: 38px;
+    border-radius: 0px;
+    border: 1px solid var(--gray500);
+    background-color: var(--white);
+    border-top: 0px;
+    margin-bottom: 20px;
+}
+
+.lastTitle:hover,
+.newTitle:hover {
+    background-color: var(--gray200);
+}
+
+.sub-list > span:first-child {
+    color: var(--gray500);
+    display: inline-block;
+    width: 150px;
+}
+
+.sub-list {
+    padding: 10px;
+}
+
+.newTitle {
+    position: absolute;
+    left: 109px;
+}
+
+.request-box {
+    margin: 15px 0;
+    padding: 20px 10px;
+    border-top: 1px solid var(--gray500);
+    border-bottom: 1px solid var(--gray500);
+}
+
+.request {
+    width: 378px;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 5px;
+    color: var(--gray600);
+}
+
+.sub-list .input-small {
+    height: 34px;
+}
+
+.sub-list .post {
+    width: 24%;
+}
+
+.post-btn {
+    width: 105px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 3px;
+}
+
+.inner-input {
+    width: 100%;
+    padding-left: 155px;
+    padding-top: 8px;
+}
+
+.sub-list > input[placeholder],
+.inner-input > input[placeholder] {
+    text-indent: 10px;
+}
+
+/* 주문 상품 
+-------------------------------------------*/
+
+.delivery {
+    border-top: 2px solid var(--gray500);
+    height: 65px;
+    line-height: 65px;
+    text-indent: 15px;
+    background-color: var(--gray200);
+    color: var(--primary);
+}
+.order-info {
+    padding: 30px;
+    position: relative;
+}
+
+.img-wrap {
+    width: 120px;
+    height: 120px;
+}
+
+.orderItem-img {
+    width: 100%;
+}
+
+.orderItem-title {
+    position: absolute;
+    left: 190px;
+    top: 60px;
+}
+
+.orderItem-count {
+    position: absolute;
+    left: 190px;
+    top: 100px;
+    color: var(--gray500);
+}
+
+.orderItem-price {
+    position: absolute;
+    right: 40px;
+    top: 75px;
+}
+
+/* 최종 결재 금액
+-------------------------------------------*/
+
+.price-box {
+    border-top: 2px solid var(--gray500);
+}
+
+.price-box > div {
+    border-bottom: 1px solid var(--gray200);
+}
+
+.price-box > div > span {
+    display: inline-block;
+    text-indent: 30px;
+}
+
+.pay-sub {
+    width: 180px;
+    height: 55px;
+    background-color: var(--gray100);
+    line-height: 55px;
+}
+
+/* 결제 방법 
+-------------------------------------------*/
+.pay-way {
+    padding: 15px 0;
+    margin-top: 15px;
+    position: relative;
+}
+
+.toss-logo {
+    width: 78px;
+    position: absolute;
+    top: 11px;
+    left: 35px;
+}
+
+.kakao-logo {
+    width: 80px;
+    position: absolute;
+    top: 6px;
+    left: 35px;
+}
+
+/* 결제 동의 및 결제하기
+-------------------------------------------*/
+
+.pay-final {
+    text-align: center;
+}
+.pay-agree {
+    text-align: center;
+    margin-top: 80px;
+}
+.pay-btn {
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+}

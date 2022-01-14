@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>위대한 캣츠비-결제페이지</title>
+        <link rel="stylesheet" href="../../css/user/showmethemoney.css" />
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/user/input.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="pay-container">
+                <!--타이틀-->
+                <h2 class="pay-title text-lg">주문결제</h2>
+                <div class="pay-status text-sm">
+                    <span class="status-now">01) 주문결제</span>
+                    <span> > </span>
+                    <span>02) 결제완료</span>
+                </div>
+                <!--배송지 입력-->
+                <div class="pay-info">
+                    <h3 class="text-lg">배송정보</h3>
+                    <div id="addr-tabs" class="addr-tabs">
+                        <button id="addr-tab" data-addr="last-addr" class="addr-tab active lastTitle">최근 배송지</button>
+                        <button id="addr-tab" data-addr="new-addr" class="addr-tab newTitle">신규 배송지</button>
+                    </div>
+                    <!--최근 배송지-->
+                    <div id="last-addr" class="addr active">
+                        <div class="sub-list">
+                            <span>받는 사람</span>
+                            <span id="user-name">김우영</span>
+                        </div>
+                        <div class="sub-list">
+                            <span>휴대 전화</span>
+                            <span id="user-phone">011-1234-5678</span>
+                        </div>
+                        <div class="sub-list">
+                            <span>배송 주소</span>
+                            <span id="user-Addr">경상북도 울릉군 울릉읍 독도리</span>
+                        </div>
+                        <div class="sub-list request-box">
+                            <span>배송 요청 사항</span>
+                            <select class="request">
+                                <option value="0" selected>배송 요청 사항을 선택하세요.</option>
+                                <option value="1">부재 시 연락 부탁드려요.</option>
+                                <option value="2">문 앞으로 배송 부탁드려요.</option>
+                                <option value="3">배송 전 연락 부탁드려요.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--신규 배송지-->
+                    <div id="new-addr" class="addr new-addr">
+                        <div class="sub-list">
+                            <span>받는 사람</span>
+                            <input type="text" placeholder="받으시는 분의 성함을 입력하세요." class="input-small" />
+                        </div>
+                        <div class="sub-list">
+                            <span>휴대 전화</span>
+                            <input type="text" placeholder="휴대전화 번호를 입력하세요." class="input-small" />
+                        </div>
+                        <div class="sub-list">
+                            <span>배송지 주소</span>
+                            <input type="text" placeholder="우편번호를 입력하세요." class="input-small post" />
+                            <button type="submit" id="post-btn" class="post-btn">우편번호</button>
+                            <div class="inner-input">
+                                <input type="text" placeholder="주소를 입력하세요." disabled class="input-small" />
+                            </div>
+                            <div class="inner-input">
+                                <input type="text" placeholder="상세주소를 입력하세요." class="input-small" />
+                            </div>
+                            </div>
+                            <div class="sub-list request-box">
+                                <span>배송 요청사항</span>
+                                <select class="request">
+                                    <option value="0" selected>배송 요청 사항을 선택하세요.</option>
+                                    <option value="1">부재 시 연락 부탁드려요.</option>
+                                    <option value="1">문 앞으로 배송 부탁드려요.</option>
+                                    <option value="1">배송 전 연락 부탁드려요.</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <!--주문 상품-->
+                <div class="order-item">
+                    <h3 class="text-lg">주문상품</h3>
+                    <div class="delivery bold">발송일 : 오늘</div>
+                    <div class="order-info">
+                        <div class="img-wrap">
+                            <img src="../../img/user/showmethemoney/pay-item.jpg" alt="캣츠라인푸드퓨레" id="orderImg" class="orderItem-img"/>
+                        </div>
+                        <div id="orderItem-title"class="orderItem-title">캣츠파인푸드 퓨레 No3. 103 캥거루 파우치 85g</div>
+                        <div id="orderItem-price" class="orderItem-price bold">3,600원</div>
+                        <div class="orderItem-count">수량: <span id="orderItem-count">1개</span></div>
+                    </div>
+                </div>
+                <!--최종 결제 금액-->
+                <div class="pay-price">
+                    <h3 class="text-lg">최종 결제 금액</h3>
+                    <div class="price-box">
+                        <div>
+                            <span class="pay-sub">총 상품 금액</span>
+                            <span id="pay-price">3,600원</span>
+                        </div>
+                        <div>
+                            <span class="pay-sub">배송비</span>
+                            <span id="pay-charge">3,000원</span>
+                        </div>
+                        <div>
+                            <span class="pay-sub">총 결제금액</span>
+                            <span id="final-price" class="bold">6,600원</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--결제 방법-->
+                <div class="pay-way">
+                    <h3 class="text-lg">결제방법</h3>
+                    <div class="pay-way">
+                        <input type="radio" name="pay-way" value="toss"/>
+                        <img src="../../img/user/showmethemoney/toss-logo.png" alt="토스로고" class="toss-logo" />
+                    </div>
+                    <div class="pay-way">
+                        <input type="radio" name="pay-way" value="kakao"/>
+                        <img src="../../img/user/showmethemoney/kakaopay-logo.png" alt="카카오페이로고" class="kakao-logo" />
+                    </div>
+                </div>
+            </div>
+            <div class="pay-final">
+                <div class="pay-agree text-sm">위 주문내용을 확인하였으며 결제에 동의합니다.</div>
+                <button type="submit" class="pay-btn text-lg button-small bold">결제하기</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const addrTabs = document.querySelectorAll(".addr-tab");
+
+    
+        for(const tab of addrTabs){
+            tab.addEventListener('click' , e => {
+                //모든 버튼에 대한 active 클래스 해제
+                for(const addr of document.querySelectorAll('.addr-tab')){
+                    addr.classList.remove('active');
+                }
+
+                //클릭된 자기 자신은 active 클래스 적용
+                e.currentTarget.classList.add('active');
+    
+                //화면상에 보이는 모든 페이지를 숨김
+                for(const al of document.querySelectorAll('.addr')){
+                    al.classList.remove('active');
+                }
+    
+                //클릭된 버튼에 적용된 'data-city'값을 취득
+                const dataAddr = e.currentTarget.dataset.addr;
+                //취득한 값을 id속성으로 사용하는 페이지에게 active클래스 적용-> 화면에 표시
+                document.getElementById(dataAddr).classList.add('active');
+            });
+        }
+
+    </script>
+    </body>
+</html>
