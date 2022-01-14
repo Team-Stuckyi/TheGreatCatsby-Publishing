@@ -10,14 +10,6 @@ export function alertComponents() {
 
             this.innerHTML =
                 `<style>
-            .alert {
-                position: relative;
-                width: 400px;
-                height: 200px;
-                background-color: var(--gray200);
-                border-radius: 5px;
-                box-shadow: 5px 5px 15px 5px var(--gray400);
-            }
             .alert-container {
                 position: fixed;
                 top: 30%;
@@ -28,7 +20,7 @@ export function alertComponents() {
                 position: relative;
                 width: 400px;
                 height: 200px;
-                background-color: var(--gray200);
+                background-color: var(--white);
                 border-radius: 5px;
                 box-shadow: 5px 5px 15px 5px var(--gray400);
             }
