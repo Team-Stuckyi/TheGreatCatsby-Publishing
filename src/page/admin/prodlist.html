@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin - 상품 관리 페이지</title>
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link href="../../css/admin/header.css" rel="stylesheet" />
+        <link href="../../css/admin/table.css" rel="stylesheet" />
+        <link href="../../css/admin/page-info-wrapper.css" rel="stylesheet" />
+        <link href="../../css/admin/sort-container.css" rel="stylesheet" />
+        <link href="../../css/admin/pagination.css" rel="stylesheet" />
+        <link href="../../css/admin/countBox.css" rel="stylesheet" />
+        <link href="../../css/admin/input.css" rel="stylesheet" />
+        <link href="../../css/admin/button.css" rel="stylesheet" />
+        <link href="../../css/admin/select.css" rel="stylesheet" />
+        <link href="../../css/admin/checkbox.css" rel="stylesheet" />
+        <link href="../../css/admin/prodlist.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <div class="container">
+                    <ul>
+                        <img src="../../img/common/TheGreatCatsby-light-logo.png" />
+                        <li><a href="./adminmemberlist">관리자 회원관리</a></li>
+                        <li><a href="./memberlist">일반 회원관리</a></li>
+                        <li><a href="./prodlist">상품 관리</a></li>
+                        <li><a href="./reviewlist">리뷰 관리</a></li>
+                        <li><a href="./orderlist">주문 관리</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="page-info-wrapper text-2xl" style="width: 250px">
+                <span class="primary">관리자 회원관리</span>
+                <hr />
+            </div>
+
+            <div class="sort-container">
+                <div class="countBox">
+                    <span class="countBox-left">전체회원</span>
+                    <span class="countBox-right">486개</span>
+                </div>
+
+                <div class="search-container">
+                    <select class="select text-base">
+                        <option value="">상품평</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                    <input class="input" placeholder="내용을 입력하세요" style="margin-left: 20px" />
+                </div>
+            </div>
+
+            <table>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>재고</th>
+                <th>판매</th>
+                <th colspan="2">관리</th>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="카샤카샤 잠자리 모양" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="123" />
+                    </td>
+                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="원형 스크래쳐" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="75" />
+                    </td>
+                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="생식본능 얼티밋 치킨" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="64" />
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                    </td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="앙모볼 6p" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="345" />
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                    </td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="에버크린 무향 모래" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="233" />
+                    </td>
+                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="버박 고양이 치약" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="137" />
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                    </td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="상어 쿠션집" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="183" />
+                    </td>
+                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="부들부들 실리콘 빗" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="223" />
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                    </td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="장난감 - 레이저" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="33" />
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                    </td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="고양이 인식표 성묘용" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="14" />
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                    </td>
+                    <td>
+                        <button class="btn btn-full" data-alert="edit">수정</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+        <div id="alert-area"></div>
+    </body>
+    <script type="module" src="../../js/module/adminAlert.js"></script>
+</html>
