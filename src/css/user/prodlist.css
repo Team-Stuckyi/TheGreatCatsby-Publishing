@@ -118,6 +118,7 @@ hr {
     height: 45px;
     border: 1px solid var(--gray500);
     background-color: var(--white);
+    position: relative;
 }
 .minus {
     border-radius: 0;
@@ -127,9 +128,10 @@ hr {
     border: none;
     border-right: 1px solid var(--gray500);
 }
+
 .count-field {
     display: inline-block;
-    width: 78.5px;
+    width: 78px;
     text-align: center;
     vertical-align: top;
     padding-top: 11px;
@@ -138,6 +140,8 @@ hr {
 .plus {
     width: 45px;
     height: 45px;
+    position: absolute;
+    right: 0;
     line-height: 45px;
     border-radius: 0;
     border: none;
