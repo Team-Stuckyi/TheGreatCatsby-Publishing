@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin - 관리자 회원 관리</title>
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link href="../../css/admin/header.css" rel="stylesheet" />
+        <link href="../../css/admin/table.css" rel="stylesheet" />
+        <link href="../../css/admin/page-info-wrapper.css" rel="stylesheet" />
+        <link href="../../css/admin/sort-container.css" rel="stylesheet" />
+        <link href="../../css/admin/pagination.css" rel="stylesheet" />
+        <link href="../../css/admin/countBox.css" rel="stylesheet" />
+        <link href="../../css/admin/input.css" rel="stylesheet" />
+        <link href="../../css/admin/button.css" rel="stylesheet" />
+        <link href="../../css/admin/select.css" rel="stylesheet" />
+        <link href="../../css/admin/checkbox.css" rel="stylesheet" />
+        <link href="../../css/admin/managemember.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <div class="container" style="display: flex; justify-content: space-between">
+                    <ul>
+                        <img src="../../img/common/TheGreatCatsby-light-logo.png" />
+                        <li><a href="./adminmemberlist">관리자 회원관리</a></li>
+                        <li><a href="./memberlist">일반 회원관리</a></li>
+                        <li><a href="./prodlist">상품 관리</a></li>
+                        <li><a href="./reviewlist">리뷰 관리</a></li>
+                        <li><a href="./orderlist">주문 관리</a></li>
+                    </ul>
+                    <ul>
+                        <li><span>로그아웃</span></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="page-info-wrapper text-2xl" style="width: 250px">
+                <span class="primary">관리자 회원 관리</span>
+                <hr />
+            </div>
+
+            <div class="sort-container">
+                <div class="countBox">
+                    <span class="countBox-left">전체회원</span>
+                    <span class="countBox-right">4명</span>
+                </div>
+
+                <div class="search-container">
+                    <select class="select text-base">
+                        <option value="index">번호</option>
+                        <option value="email">이메일</option>
+                        <option value="name">이름</option>
+                        <option value="phone">휴대폰 번호</option>
+                        <option value="status">상태</option>
+                        <option value="address">주소</option>
+                    </select>
+                    <input class="input" placeholder="내용을 입력하세요" style="margin-left: 5px" />
+                    <button class="btn btn-no" style="margin-left: 5px">검색</button>
+                </div>
+            </div>
+
+            <table>
+                <th>번호</th>
+                <th>이메일</th>
+                <th>이름</th>
+                <th>휴대폰번호</th>
+                <th>상태</th>
+                <th>주소</th>
+                <th>관리</th>
+                <th colspan="2">관리</th>
+                <tr>
+                    <td>0</td>
+                    <td><input class="input input-full" type="email" placeholder="내용을 입력하세요" value="helloworld@gmail.com" /></td>
+                    <td><input class="input input-full" placeholder="내용을 입력하세요" value="김우영" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="010-1234-5678" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="정상" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="서울특별시 회기동 123" /></td>
+                    <td><button class="btn btn-full" data-alert="edit">수정</button></td>
+                    <td><button class="btn btn-full btn-danger" data-alert="del">삭제</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input class="input input-full" type="email" placeholder="내용을 입력하세요" value="goodday@gmail.com" /></td>
+                    <td><input class="input input-full" placeholder="내용을 입력하세요" value="전찬민" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="010-1124-5678" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="정상" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="서울특별시 중구 동호로 249" /></td>
+                    <td><button class="btn btn-full" data-alert="edit">수정</button></td>
+                    <td><button class="btn btn-full btn-danger" data-alert="del">삭제</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input class="input input-full" type="email" placeholder="내용을 입력하세요" value="byeworld@gmail.com" /></td>
+                    <td><input class="input input-full" placeholder="내용을 입력하세요" value="노희재" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="010-1234-5428" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="정상" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="제주특별자치도 제주시 삼도이동 중앙로2길 25" /></td>
+                    <td><button class="btn btn-full" data-alert="edit">수정</button></td>
+                    <td><button class="btn btn-full btn-danger" data-alert="del">삭제</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input class="input input-full" type="email" placeholder="내용을 입력하세요" value="niceworld@gmail.com" /></td>
+                    <td><input class="input input-full" placeholder="내용을 입력하세요" value="이슬기" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="010-1534-1278" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="정상" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="부산광역시 사하구 신평동 628-6" /></td>
+                    <td><button class="btn btn-full" data-alert="edit">수정</button></td>
+                    <td><button class="btn btn-full btn-danger" data-alert="del">삭제</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input class="input input-full" type="email" placeholder="내용을 입력하세요" value="killerLee@gmail.com" /></td>
+                    <td><input class="input input-full" placeholder="내용을 입력하세요" value="이병민" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="010-4814-5678" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="정상" /></td>
+                    <td><input class="input input-full" name="checkbox-example" value="서울특별시 동작구 노들로 674" /></td>
+                    <td><button class="btn btn-full" data-alert="edit">수정</button></td>
+                    <td><button class="btn btn-full btn-danger" data-alert="del">삭제</button></td>
+                </tr>
+            </table>
+
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+        <div id="alert-area"></div>
+    </body>
+    <script type="module" src="../../js/module/adminAlert.js"></script>
+</html>
