@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
+    <title>Document</title>
+    <style>
+
+    .tag-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 0 15px 15px;
+    }
+    
+    .list-bar {
+        border-top: 1px solid var(--gray300);
+        border-bottom: 1px solid var(--gray300);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+    }
+    
+    .list-bar p {
+        padding: 10px 0 10px 0;
+    }
+
+    .sort-bar {
+        margin-top: 8px;
+    }
+
+    .sort-bar p{
+        display: inline;
+    }
+
+    .sort-bar img {
+        width: 8px;
+    }
+
+    .sort-text {
+        color: var(--gray300);
+    }
+
+    .sort-btn {
+        color: var(--primary);
+    }
+
+    .sort-container {
+        width: 100px;
+        text-align: center;
+        color: var(--gray300);
+        border: 1px solid var(--gray300);
+        background-color: var(--white);
+        margin-right: 5px;
+        padding: 10px 0 10px 0;
+        overflow: hidden;
+        position: absolute;
+        left: 1445px;
+    }
+
+    .sort-list:hover {
+        background-color: var(--gray100);
+        color: var(--gray400);
+    }
+
+    .card-container {
+        width: 100%;
+        margin: 50px 0 50px 0;
+        display: grid;
+        grid-template-columns: repeat(5, 250px);
+    }
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination img {
+        width: 12px;
+    }
+
+    .page-num {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <header-components></header-components>
+    <content id="content">
+        <div class="content-inner container">
+            <ul class="tag-container">
+                <li class="tag-active-a tag-active-span text-xs">전체</li>
+                <li class="tag-a tag-span text-xs">사료</li>
+                <li class="tag-a tag-span text-xs">간식</li>
+                <li class="tag-a tag-span text-xs">건강관리</li>
+                <li class="tag-a tag-span text-xs">모래</li>
+                <li class="tag-a tag-span text-xs">장난감</li>
+                <li class="tag-a tag-span text-xs">이동장</li>
+                <li class="tag-a tag-span text-xs">미용/목욕</li>
+                <li class="tag-a tag-span text-xs">급식기/급수기</li>
+                <li class="tag-a tag-span text-xs">하우스</li>
+                <li class="tag-a tag-span text-xs">이동장</li>
+            </ul>
+            <div class="list-bar">
+                <p>7 개의 상품</p>
+                <div class="sort-bar">
+                    <p class="text-xs sort-text">정렬</p>
+                    <span class="btn-container">
+                        <p class="text-xs sort-btn"></p>
+                        <img src="src/img/user/index/down-arrow.png">
+                    </span>
+                </div>
+            </div>
+            <div class="sort-container">
+                        <ul>
+                            <li class="sort-list text-xs">별점 높은순</li>
+                            <li class="sort-list text-xs">가격 낮은순</li>
+                            <li class="sort-list text-xs">가격 높은순</li>
+                            <li class="sort-list text-xs">후기 많은순</li>
+                        </ul>
+                </div>
+            <ul class="card-container">
+                <card-components></card-components>
+                <card-components></card-components>
+                <card-components></card-components>
+                <card-components></card-components>
+                <card-components></card-components>
+                <card-components></card-components>
+                <card-components></card-components>
+            </ul>
+        </div>
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li class="page-num">1</li>
+                <li class="page-num">2</li>
+                <li class="page-num">3</li>
+                <img src="src/img/user/index/right-arrow.png">
+            </ul>
+        </div>
+    </content>
+    <footer-components></footer-components>
+
+    <script type="module" src="src/js/module/header.js"></script>
+    <script type="module" src="src/js/module/footer.js"></script>
+    <script type="module" src="src/js/module/prod-card.js"></script>
+
+    <script>
+        let sortBtnName = '별점 높은순';
+        const sortBtn = document.querySelector('.sort-btn');
+        sortBtn.innerHTML = sortBtnName;
+
+        const primary = 'var(--primary)';
+        const gray = 'var(--gray300)';
+        const sortList = document.querySelectorAll('.sort-list');
+        sortList.forEach ( sortElement => {
+            sortElement.addEventListener('click', () => {
+                sortBtn.innerHTML = sortElement.innerHTML;
+                makeAllGray();
+                sortElement.style.color = primary;
+                sortContainer.style.opacity = 0;
+            })
+        });
+
+        sortList[0].style.color = primary;
+
+        function makeAllGray() {
+            sortList.forEach (sortElement => {
+                sortElement.style.color = gray;
+            })
+        }
+
+        const sortContainer = document.querySelector('.sort-container');
+        const btnContainer = document.querySelector('.btn-container');
+        let sortPop = false;
+
+        sortContainer.style.opacity = 0;
+        btnContainer.addEventListener('click', () => {
+            if(sortPop) {
+                sortContainer.style.opacity = 0;
+                sortContainer.style.height = '0px';
+                sortPop = false;    
+            } else {
+                sortContainer.style.opacity = 1;
+                sortContainer.style.height = '65px';
+                sortPop = true;
+            }
+        });
+
+    </script>
+</body>
+</html>
