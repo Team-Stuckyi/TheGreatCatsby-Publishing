@@ -22,7 +22,7 @@
     <body>
         <div class="header">
             <nav>
-                <div class="container">
+                <div class="container" style="display: flex; justify-content: space-between">
                     <ul>
                         <img src="../../img/common/TheGreatCatsby-light-logo.png" />
                         <li><a href="./adminmemberlist">관리자 회원관리</a></li>
@@ -31,32 +31,35 @@
                         <li><a href="./reviewlist">리뷰 관리</a></li>
                         <li><a href="./orderlist">주문 관리</a></li>
                     </ul>
+                    <ul>
+                        <li><span>로그아웃</span></li>
+                    </ul>
                 </div>
             </nav>
         </div>
         <div class="container">
             <div class="page-info-wrapper text-2xl" style="width: 250px">
-                <span class="primary">관리자 회원관리</span>
+                <span class="primary">상품 관리</span>
                 <hr />
             </div>
 
             <div class="sort-container">
                 <div class="countBox">
                     <span class="countBox-left">전체회원</span>
-                    <span class="countBox-right">486개</span>
+                    <span class="countBox-right">486명</span>
                 </div>
 
                 <div class="search-container">
                     <select class="select text-base">
-                        <option value="">상품평</option>
-                        <option value="dog">Dog</option>
-                        <option value="cat">Cat</option>
-                        <option value="hamster">Hamster</option>
-                        <option value="parrot">Parrot</option>
-                        <option value="spider">Spider</option>
-                        <option value="goldfish">Goldfish</option>
+                        <option value="index">번호</option>
+                        <option value="email">이메일</option>
+                        <option value="name">이름</option>
+                        <option value="phone">휴대폰 번호</option>
+                        <option value="status">상태</option>
+                        <option value="address">주소</option>
                     </select>
-                    <input class="input" placeholder="내용을 입력하세요" style="margin-left: 20px" />
+                    <input class="input" placeholder="내용을 입력하세요" style="margin-left: 5px" />
+                    <button class="btn btn-no" style="margin-left: 5px">검색</button>
                 </div>
             </div>
 
