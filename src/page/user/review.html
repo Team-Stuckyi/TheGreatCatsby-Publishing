@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/button.css" />
+    <style>
+
+        .prod-info-container {
+            border: 1px solid var(--gray300);
+            padding: 30px 0 30px 0;
+        }
+
+        .prod-info-inner {
+            width: 700px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .prod-info {
+            width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .prod-img img{
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .review-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .star-container {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .star-avg {
+            margin: 10px 0 10px 0;
+        }
+
+        .star-avg p{
+            display: inline;
+        }
+
+        .review-count {
+            color: var(--gray300);
+        }
+
+        .material-icons-outlined {
+            color: var(--yellow);
+        }
+
+        /* 후기 내용 작성칸*/
+        .write-box {
+            border: 1px solid var(--gray300);
+            border-radius: 5px;
+            width: 900px;
+            margin: 50px 0 50px 0;
+            padding: 50px 0 50px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .write-box p {
+            display: inline-block;
+            color: var(--gray400);
+            padding: 10px 0 0 50px;
+        }
+
+        .write-box img{
+            width: 40px;
+            padding-right: 50px;
+        }
+
+        .btn-container {
+            margin: 50px 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .star-btn {
+            background-color:var(--white);
+            width: 200px;
+            padding: 15px;
+        }
+
+        .submit-btn {
+            background-color:var(--primary);
+            color: var(--white);
+            width: 200px;
+            padding: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <contents>
+        <div class="container">
+            <div class="prod-info-container">
+                <div class="prod-info-inner">
+                    <div class="prod-info">
+                        <div class="prod-name">
+                            <p class="text-lg bold">츄통령 바삭츄 동결건조 닭가슴살 55g</p>
+                        </div>
+                        <span class="prod-img"><img src="../../img/user/index/image1.jpg"></span>
+                    </div>
+                        
+                    <div class="star-container">
+                        <p class="star-text text-base">평점</p>
+                        <div class="star-avg">
+                            <p class="text-4xl">4.9 </p>
+                            <p class="review-count text-sm">(1,842)</p>
+                        </div>
+                        <div class="star-count">
+                            <span class="material-icons-outlined text-2xl"> star </span>
+                            <span class="material-icons-outlined text-2xl"> star </span>
+                            <span class="material-icons-outlined text-2xl"> star </span>
+                            <span class="material-icons-outlined text-2xl"> star </span>
+                            <span class="material-icons-outlined text-2xl"> star_rate </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-container">
+                <div class="write-box">
+                    <p class="text-base">구매 후기를 남겨주세요 :) (최소 50자 이상)</p>
+                    <span><img src="/TheGreatCatsby-Publishing/src/img/user/review/pic_add.png"></span>
+                </div>
+                <div class="btn-container">
+                <button class="star-btn">
+                    <span class="material-icons-outlined text-2xl"> star </span>
+                    <span class="material-icons-outlined text-2xl"> star </span>
+                    <span class="material-icons-outlined text-2xl"> star </span>
+                    <span class="material-icons-outlined text-2xl"> star </span>
+                    <span class="material-icons-outlined text-2xl"> star_rate </span>
+                </button>
+                <button class="submit-btn">
+                    <p class="text-base">등록</p>
+                </button>
+            </div>
+            </div>
+            
+        </div>
+    </contents>
+    
+</body>
+</html>
