@@ -3,15 +3,15 @@ function headerComponents() {
     <header id="header">
         <div class="container">
             <div class="header-inner">
-                <a href="#"><span class="main-logo"><img src="/src/img/user/header/logo1.png"></span></a>
-                <a href="#"><span class="input-login"><img src="/src/img/user/header/login.png"><p class="text-sm">Login</p></span></a>
+                <a href="#"><span class="main-logo"><img src="src/img/user/header/logo1.png"></span></a>
+                <a href="#"><span class="input-login"><img src="src/img/user/header/login.png"><p class="text-sm">Login</p></span></a>
             </div>
         </div>    
     </header>
     `;
     const cssTemplate = `
-            <link rel="stylesheet" href="/src/css/reset.css" />
-            <link rel="stylesheet" href="/src/css/common.css" />
+            <link rel="stylesheet" href="src/css/reset.css" />
+            <link rel="stylesheet" href="src/css/common.css" />
             <style>
             /* 공통 */
             body {
@@ -25,7 +25,7 @@ function headerComponents() {
 
             /* 헤더 */
             #header {
-                margin: 10px 0 100px 0;
+                margin: 10px 0 80px 0;
                 width: 100%;
                 height: 100px;
                 display: flex;
