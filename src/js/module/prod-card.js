@@ -1,7 +1,7 @@
 function cardComponents() {
     const htmlTemplate = `
     <li class="prod-card">
-        <span><img src="/image1(5).jpg"></span>
+        <span><img src="src/img/user/index/image1.jpg"></span>
         <p class="text-sm">캣츠파인푸드 퓨레 No.107 캥거루 파우치 85g</p>
         <span class="material-icons-outlined text-sm"> star </span>
         <span class="material-icons-outlined text-sm"> star </span>
