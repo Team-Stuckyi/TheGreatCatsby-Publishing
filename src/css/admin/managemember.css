@@ -1,0 +1,33 @@
+/**
+ * @filename    : managemember.css
+ * @author      : 김우영
+ * @description : 관리자 페이지 > 일반 회원 관리, 관리자 회원 관리 페이지 CSS
+ */
+
+/* managemember table
+------------------------------*/
+table {
+    text-align: center;
+}
+td > input {
+    text-align: center;
+    border: none !important;
+}
+th:nth-child(1) {
+    width: 50px;
+}
+th:nth-child(2) {
+    width: 250px;
+}
+th:nth-child(3) {
+    width: 80px;
+}
+th:nth-child(4) {
+    width: 200px;
+}
+th:nth-child(5) {
+    width: 80px;
+}
+td:nth-child(6) {
+    width: 300px;
+}

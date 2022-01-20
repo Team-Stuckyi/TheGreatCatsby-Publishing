@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>위대한 캣츠비-결제완료</title>
+        <link rel="stylesheet" href="../../css/user/thankyou.css" />
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/user/input.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+    </head>
+    <body>
+        <header-components></header-components>
+        <div class="container">
+            <div class="finish-container">
+                <!--타이틀-->
+                <h2 class="pay-title text-lg">주문결제</h2>
+                <div class="pay-status text-sm">
+                    <span>01) 주문결제</span>
+                    <span> > </span>
+                    <span class="status-now">02) 결제완료</span>
+                </div>
+                <div class="finist-text text-lg bold">주문접수가 완료되었습니다.</div>
+                <div class="finish-info">
+                    <div class="sub-list">
+                        <span>받는 사람</span>
+                        <span id="user-name">김우영</span>
+                    </div>
+                    <div class="sub-list">
+                        <span>휴대 전화</span>
+                        <span id="user-phone">011-1234-5678</span>
+                    </div>
+                    <div class="sub-list">
+                        <span>배송 주소</span>
+                        <span id="user-Addr">경상북도 울릉군 울릉읍 독도리</span>
+                    </div>
+                    <div class="sub-list">
+                        <span>결제 방법</span>
+                        <span id="user-Addr">카카오 페이 입금</span>
+                    </div>
+                </div>
+
+                <div class="pay-price">
+                    <div class="price-box">
+                        <div>
+                            <span class="pay-sub">총 상품 금액</span>
+                            <span id="pay-price">3,600원</span>
+                        </div>
+                        <div>
+                            <span class="pay-sub">배송비</span>
+                            <span id="pay-charge">3,000원</span>
+                        </div>
+                        <div>
+                            <span class="pay-sub">총 결제 금액</span>
+                            <span id="final-price" class="bold">6,600원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-final">
+                <button type="submit" class="pay-btn text-lg button-small bold">쇼핑 계속하기</button>
+            </div>
+        </div>
+        <footer-components></footer-components>
+        <script src="../../js/module/header.js"></script>
+        <script src="../../js/module/footer.js"></script>
+    </body>
+</html>

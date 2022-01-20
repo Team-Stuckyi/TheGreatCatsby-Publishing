@@ -1,3 +1,9 @@
+/**
+ * @filename    : adminAlert.js
+ * @author      : 이병민
+ * @description : 버튼 클릭시 알림창 생성
+ */
+
 import { $ } from './dom.js';
 import { alertClose } from './alertClose.js';
 import { alertComponents } from './alertComponents.js';

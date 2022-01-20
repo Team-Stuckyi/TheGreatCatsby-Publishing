@@ -27,6 +27,14 @@
 .btn-quarter {
     width: 25%;
 }
+.btn-no {
+    width: 100px;
+    height: 100%;
+}
+.btn-sm {
+    width: 50px;
+    height: 100%;
+}
 .btn-danger {
     background-color: var(--primary);
 }
