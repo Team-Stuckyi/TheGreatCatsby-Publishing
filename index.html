@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
     <title>Document</title>
     <style>
-
+    
+    /* tag 위치 설정 */
     .tag-container {
         display: flex;
         justify-content: flex-start;
         padding: 0 0 15px 15px;
     }
     
+    /* 상품 갯수 영역 */
     .list-bar {
         border-top: 1px solid var(--gray300);
         border-bottom: 1px solid var(--gray300);
@@ -32,6 +34,7 @@
         padding: 10px 0 10px 0;
     }
 
+    /* 분류 영역 */
     .sort-bar {
         margin-top: 8px;
     }
@@ -52,6 +55,7 @@
         color: var(--primary);
     }
 
+    /* 분류 종류 영역 */
     .sort-container {
         width: 100px;
         text-align: center;
@@ -70,6 +74,7 @@
         color: var(--gray400);
     }
 
+    /* 상품 카드 영역 */
     .card-container {
         width: 100%;
         margin: 50px 0 50px 0;
@@ -77,6 +82,7 @@
         grid-template-columns: repeat(5, 250px);
     }
 
+    /* 페이지네이션 영역 */
     .pagination-container {
         display: flex;
         justify-content: center;
@@ -156,7 +162,7 @@
     <script>
         let sortBtnName = '별점 높은순';
         const sortBtn = document.querySelector('.sort-btn');
-        sortBtn.innerHTML = sortBtnName;
+        sortBtn.innerHTML = sortBtnName; //별점 높은순을 기본으로 설정
 
         const primary = 'var(--primary)';
         const gray = 'var(--gray300)';
@@ -167,7 +173,7 @@
                 makeAllGray();
                 sortElement.style.color = primary;
                 sortContainer.style.opacity = 0;
-            })
+            }) //클릭하면 해당 분류의 글씨색이 바뀌고, 컨테이너가 다시 보이지 않게 됨
         });
 
         sortList[0].style.color = primary;
@@ -175,23 +181,23 @@
         function makeAllGray() {
             sortList.forEach (sortElement => {
                 sortElement.style.color = gray;
-            })
+            }) //글씨색 초기화
         }
 
         const sortContainer = document.querySelector('.sort-container');
         const btnContainer = document.querySelector('.btn-container');
-        let sortPop = false;
+        let sortPop = false; //컨테이너의 기본이 보이지 않도록 설정
 
         sortContainer.style.opacity = 0;
         btnContainer.addEventListener('click', () => {
             if(sortPop) {
                 sortContainer.style.opacity = 0;
                 sortContainer.style.height = '0px';
-                sortPop = false;    
+                sortPop = false;    //컨테이너가 보이지 않을 때
             } else {
                 sortContainer.style.opacity = 1;
                 sortContainer.style.height = '65px';
-                sortPop = true;
+                sortPop = true;     //컨테이너가 보일 때
             }
         });
 
