@@ -1,0 +1,37 @@
+/**
+ * @filename    : regsuccess.css
+ * @author      : 전찬민
+ * @description : 가입완료 페이지 css
+ */
+
+/** 컨테이너 정렬 */
+.container {
+    text-align: center;
+    width: 450px;
+    margin: auto;
+}
+
+/** 각 div별 margin */
+.regsuccess-image,
+.regsuccess-text,
+.regsuccess-button {
+    margin: 40px 0;
+}
+
+/** button */
+/** button 색깔 */
+.button-regsuccess {
+    background-color: var(--primary);
+}
+
+/** button 크기 및 위치 */
+.regsuccess-button {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+/** button 안 글자 색깔 */
+.button-regsuccess > a {
+    color: var(--white);
+}

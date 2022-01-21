@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>위대한캣츠비 - 로그인페이지</title>
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/user/input.css" />
+        <link rel="stylesheet" href="../../css/user/login.css" />
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+    </head>
+    <body>
+        <header-components></header-components>
+        <!-- 로그인 페이지 -->
+        <div id="container" class="container">
+            <form id="login">
+                <img src="../../img/common/TheGreatCatsby-Center-Pink-logo.png" style="width: 400px" />
+                <div class="input-login">
+                    <input type="email" id="login-email" class="login-input input-full" placeholder="이메일을 입력해주세요" />
+                    <input type="password" id="login-pass" class="login-input input-full" placeholder="비밀번호를 입력해주세요" />
+                </div>
+                <div class="button-login">
+                    <button type="submit" class="login-button button-full">로그인</button>
+                </div>
+                <div>
+                    <a href="#" class="text-sm" style="color: var(--gray500)">회원가입</a>
+                </div>
+            </form>
+        </div>
+        <footer-components></footer-components>
+    </body>
+    <script src="../../js/module/header.js"></script>
+    <script src="../../js/module/footer.js"></script>
+    <script src="../../js/module/regexHelper.js"></script>
+    <script type="text/javascript">
+        document.querySelector('#container').addEventListener('submit', e => {
+            e.preventDefault();
+
+            const regexHelper = new RegexHelper();
+
+            /** 이메일 검사 */
+            if (!regexHelper.value('#login-email', '이메일을 입력하세요.')) {
+                return false;
+            }
+            if (!regexHelper.email('#login-email', '이메일 주소가 잘못되었습니다.')) {
+                return false;
+            }
+
+            /** 비밀번호 검사 */
+            if (!regexHelper.value('#login-pass', '비밀번호를 입력하세요.')) {
+                return false;
+            }
+            if (!regexHelper.min_length('#login-pass', 6, '비밀번호는 최소 6자이상 입력 가능합니다.')) {
+                return false;
+            }
+            if (!regexHelper.max_length('#login-pass', 20, '비밀번호는 최대 20자까지 입력 가능합니다.')) {
+                return false;
+            }
+
+            // 처리 완료
+            alert('로그인 성공');
+        });
+    </script>
+</html>

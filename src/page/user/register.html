@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>위대한 캣츠비 - 회원가입</title>
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/user/input.css" />
+        <link rel="stylesheet" href="../../css/user/register.css" />
+        <link rel="stylesheet" href="../../css/user/button.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+    </head>
+    <body>
+        <header-components></header-components>
+        <!-- 회원가입 페이지 -->
+        <div class="container" id="container">
+            <form id="register">
+                <div class="register">
+                    <img src="../../img/common/TheGreatCatsby-Center-Pink-logo.png" style="width: 400px" />
+                </div>
+                <div class="register-name">
+                    <p class="text-sm">이름 *</p>
+                    <input type="text" id="register-name" class="input-full" placeholder="이름을 입력하세요" />
+                </div>
+                <div class="register-email">
+                    <p class="text-sm">이메일 *</p>
+                    <input type="email" id="register-email" class="input-full" placeholder="이메일을 입력하세요" />
+                </div>
+                <div class="register-pass">
+                    <p class="text-sm">비밀번호 *</p>
+                    <input type="password" id="register-password" class="input-full" placeholder="비밀번호를 6자이상 입력하세요" />
+                </div>
+                <div class="register-passsucces">
+                    <p class="text-sm">비밀번호 확인 *</p>
+                    <input type="password" id="register-passsucces" class="input-full" placeholder="비밀번호를 한번 더 입력하세요" />
+                </div>
+                <div class="register-button">
+                    <button type="submit" class="button-register button-full">회원가입</button>
+                </div>
+            </form>
+        </div>
+        <footer-components></footer-components>
+    </body>
+    <script src="../../js/module/header.js"></script>
+    <script src="../../js/module/footer.js"></script>
+    <script src="../../js/module/regexHelper.js"></script>
+    <script type="text/javascript">
+        document.querySelector('#container').addEventListener('submit', e => {
+            e.preventDefault();
+
+            const regexHelper = new RegexHelper();
+
+            /** 이름 검사 */
+            if (!regexHelper.value('#register-name', '이름을 입력하세요.')) {
+                return false;
+            }
+            if (!regexHelper.min_length('#register-name', 2, '이름은 최소 2자이상 입력 가능합니다.')) {
+                return false;
+            }
+            if (!regexHelper.max_length('#register-name', 20, '이름 최대 20자까지 입력 가능합니다.')) {
+                return false;
+            }
+            if (!regexHelper.kor('#register-name', '이름은 한글만 입력 가능합니다.')) {
+                return false;
+            }
+
+            /** 이메일 검사 */
+            if (!regexHelper.value('#register-email', '이메일을 입력하세요.')) {
+                return false;
+            }
+            if (!regexHelper.email('#register-email', '이메일 주소가 잘못되었습니다.')) {
+                return false;
+            }
+
+            /** 비밀번호 검사 */
+            if (!regexHelper.value('#register-password', '비밀번호를 입력하세요.')) {
+                return false;
+            }
+            if (!regexHelper.min_length('#register-password', 6, '비밀번호는 최소 6자이상 입력 가능합니다.')) {
+                return false;
+            }
+            if (!regexHelper.max_length('#register-password', 20, '비밀번호는 최대 20자까지 입력 가능합니다.')) {
+                return false;
+            }
+            if (!regexHelper.compare_to('#register-password', '#register-passsucces', '비밀번호 확인이 잘못되었습니다.')) {
+                return false;
+            }
+
+            // 처리 완료
+            alert('회원가입 완료');
+        });
+    </script>
+</html>
