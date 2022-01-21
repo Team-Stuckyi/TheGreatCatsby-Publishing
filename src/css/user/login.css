@@ -1,0 +1,40 @@
+/**
+ * @filename    : login.css
+ * @author      : 전찬민
+ * @description : 로그인 페이지 css
+ */
+
+/* 컨테이너 정렬 */
+.container {
+    text-align: center;
+}
+.container > img {
+    margin: 60px 0;
+}
+/* login text */
+.login-text {
+    margin: 40px 0;
+}
+/* input */
+.input-login {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 450px;
+    margin-top: 30px;
+}
+.login-input {
+    margin: 10px 0;
+}
+
+/* button */
+
+.login-button {
+    background-color: var(--primary);
+    color: var(--white);
+    margin: 20px 0;
+}
+
+.button-login {
+    width: 450px;
+    margin: auto;
+}

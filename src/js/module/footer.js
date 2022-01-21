@@ -5,10 +5,10 @@ function footerComponents() {
             <div class="footer-top">
                 <div class="footer-top-list">
                     <ul>
-                        <li><img src="/src/img/user/footer/image1.png"></li>
-                        <li><img src="/src/img/user/footer/image2.png"></li>
-                        <li><img src="/src/img/user/footer/image3.png"></li>
-                        <li><img src="/src/img/user/footer/image4.png"></li>
+                        <li><img src="/TheGreatCatsby-Publishing/src/img/user/footer/image1.png"></li>
+                        <li><img src="/TheGreatCatsby-Publishing/src/img/user/footer/image2.png"></li>
+                        <li><img src="/TheGreatCatsby-Publishing/src/img/user/footer/image3.png"></li>
+                        <li><img src="/TheGreatCatsby-Publishing/src/img/user/footer/image4.png"></li>
                     </ul>
                 </div>
             </div>
@@ -17,7 +17,7 @@ function footerComponents() {
                 <div class="footer-bottom">
                     <div class="bottom-inner">
                         <div class="footer-left">
-                                <img src="/src/img/user/footer/support.png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/support.png">
                                 <p class="phone text-xl bold">1234-1234</p>
                                 <p class="text-sm opperation-time">운영 시간: 평일 10:00 ~ 18:00 / 주말, 공휴일 휴무</p>
                         </div>
@@ -41,22 +41,22 @@ function footerComponents() {
                         <div class="footer-awards">
                             <ul>
                                 <li>
-                                <img src="/src/img/user/footer/image1 (6).png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/image1 (6).png">
                                 </li>
                                 <li>
-                                <img src="/src/img/user/footer/image2 (5).png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/image2 (5).png">
                                 </li>
                                 <li>
-                                <img src="/src/img/user/footer/image3 (4).png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/image3 (4).png">
                                 </li>
                                 <li>
-                                <img src="/src/img/user/footer/image4 (3).png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/image4 (3).png">
                                 </li>
                                 <li>
-                                <img src="/src/img/user/footer/image5 (3).png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/image5 (3).png">
                                 </li>
                                 <li>
-                                <img src="/src/img/user/footer/image6 (2).png">
+                                <img src="/TheGreatCatsby-Publishing/src/img/user/footer/image6 (2).png">
                                 </li>
                             </ul>
                         </div>
@@ -72,8 +72,8 @@ function footerComponents() {
             </footer>
     `;
     const cssTemplate = `
-            <link rel="stylesheet" href="/src/css/reset.css" />
-            <link rel="stylesheet" href="/src/css/common.css" />
+            <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
+            <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
             <style>
             /* 공통 */
             .footer-top-container {
