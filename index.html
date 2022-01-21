@@ -11,97 +11,9 @@
     <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
     <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
     <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
+    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/index.css" />
     <title>Document</title>
-    <style>
-    
-        content {
-            width: 100%;
-        }
 
-    /* tag 위치 설정 */
-    .tag-container {
-        display: flex;
-        justify-content: flex-start;
-        padding: 0 0 15px 15px;
-    }
-    
-    /* 상품 갯수 영역 */
-    .list-bar {
-        border-top: 1px solid var(--gray300);
-        border-bottom: 1px solid var(--gray300);
-        display: flex;
-        justify-content: space-between;
-        padding: 0 15px 0 15px;
-    }
-    
-    .list-bar p {
-        padding: 10px 0 10px 0;
-    }
-
-    /* 분류 영역 */
-    .sort-bar {
-        margin-top: 8px;
-    }
-
-    .sort-bar p{
-        display: inline;
-    }
-
-    .sort-bar img {
-        width: 8px;
-    }
-
-    .sort-text {
-        color: var(--gray300);
-    }
-
-    .sort-btn {
-        color: var(--primary);
-    }
-
-    /* 분류 종류 영역 */
-    .sort-container {
-        width: 100px;
-        text-align: center;
-        color: var(--gray300);
-        border: 1px solid var(--gray300);
-        background-color: var(--white);
-        margin-right: 5px;
-        padding: 10px 0 10px 0;
-        overflow: hidden;
-        position: absolute;
-        left: 1445px;
-    }
-
-    .sort-list:hover {
-        background-color: var(--gray100);
-        color: var(--gray400);
-    }
-
-    /* 상품 카드 영역 */
-    .card-container {
-        width: 100%;
-        margin: 50px 0 50px 0;
-        display: grid;
-        grid-template-columns: repeat(5, 250px);
-    }
-
-    /* 페이지네이션 영역 */
-    .pagination-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .pagination img {
-        width: 12px;
-    }
-
-    .page-num {
-        display: inline-block;
-        margin-right: 30px;
-    }
-
-    </style>
 </head>
 <body>
     <header-components></header-components>
@@ -148,20 +60,15 @@
                 <card-components></card-components>
             </ul>
         </div>
-        <div class="pagination-container">
-            <ul class="pagination">
-                <li class="page-num">1</li>
-                <li class="page-num">2</li>
-                <li class="page-num">3</li>
-                <img src="/TheGreatCatsby-Publishing/src/img/user/index/right-arrow.png">
-            </ul>
-        </div>
+        <pagination-components></pagination-components>
     </content>
     <footer-components></footer-components>
 
     <script type="module" src="/TheGreatCatsby-Publishing/src/js/module/header.js"></script>
     <script type="module" src="/TheGreatCatsby-Publishing/src/js/module/footer.js"></script>
     <script type="module" src="/TheGreatCatsby-Publishing/src/js/module/prodCard.js"></script>
+    <script type="module" src="/TheGreatCatsby-Publishing/src/js/module/paginationComponents.js"></script>
+
 
     <script>
         let sortBtnName = '별점 높은순';
@@ -204,7 +111,6 @@
                 sortPop = true;     //컨테이너가 보일 때
             }
         });
-
     </script>
 </body>
 </html>
