@@ -1,0 +1,36 @@
+/**
+ * @filename    : reviewlist.css
+ * @author      : 이병민
+ * @description : 관리자 상품 관리 페이지 CSS
+ */
+
+/* reviewlist
+------------------------------*/
+table {
+    text-align: center;
+}
+td > input {
+    text-align: center;
+    border: none !important;
+}
+th:nth-child(1) {
+    width: 50px;
+}
+th:nth-child(2) {
+    width: 200px;
+}
+th:nth-child(3) {
+    width: 100px;
+}
+th:nth-child(4) {
+    width: 400px;
+}
+th:nth-child(5) {
+    width: 150px;
+}
+td:nth-child(5) {
+    width: 100px;
+}
+td:nth-child(6) {
+    width: 100px;
+}

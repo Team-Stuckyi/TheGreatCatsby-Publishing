@@ -1,7 +1,5 @@
 /* 비활성화 태그 */
 .tag-a {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
     text-decoration: none;
     color: #1c1c1c;
 }
@@ -17,8 +15,6 @@
 
 /*활성화 태그*/
 .tag-active-a {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
     text-decoration: none;
     color: #fff;
 }

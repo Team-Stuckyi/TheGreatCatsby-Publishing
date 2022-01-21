@@ -1,3 +1,9 @@
+/**
+ * @filename    : alertComponents.js
+ * @author      : 이병민
+ * @description : 알림창 컴포넌트
+ */
+
 export function alertComponents() {
     class customClass extends HTMLElement {
         connectedCallback() {

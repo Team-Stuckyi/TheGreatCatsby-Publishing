@@ -1,0 +1,42 @@
+/**
+ * @filename    : orderlist.css
+ * @author      : 이병민
+ * @description : 관리자 주문 관리 페이지 CSS
+ */
+
+/* orderlist
+------------------------------*/
+table {
+    text-align: center;
+}
+td > input {
+    text-align: center;
+    border: none !important;
+}
+th:nth-child(1) {
+    width: 100px;
+}
+th:nth-child(2) {
+    width: 300px;
+}
+th:nth-child(3) {
+    width: 200px;
+}
+th:nth-child(4) {
+    width: 100px;
+}
+th:nth-child(5) {
+    width: 200px;
+}
+th:nth-child(6) {
+    width: 100px;
+}
+th:nth-child(7) {
+    width: 200px;
+}
+td:nth-child(7) {
+    width: 100px;
+}
+td:nth-child(8) {
+    width: 100px;
+}

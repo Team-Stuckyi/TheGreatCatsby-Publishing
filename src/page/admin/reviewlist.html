@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin - 상품 관리 페이지</title>
+        <title>Admin - 리뷰 관리 페이지</title>
         <link rel="stylesheet" href="../../css/reset.css" />
         <link rel="stylesheet" href="../../css/common.css" />
         <link href="../../css/admin/header.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
         <link href="../../css/admin/button.css" rel="stylesheet" />
         <link href="../../css/admin/select.css" rel="stylesheet" />
         <link href="../../css/admin/checkbox.css" rel="stylesheet" />
-        <link href="../../css/admin/prodlist.css" rel="stylesheet" />
+        <link href="../../css/admin/reviewlist.css" rel="stylesheet" />
     </head>
     <body>
         <div class="header">
@@ -39,7 +39,7 @@
         </div>
         <div class="container">
             <div class="page-info-wrapper text-2xl" style="width: 250px">
-                <span class="primary">상품 관리</span>
+                <span class="primary">리뷰 관리</span>
                 <hr />
             </div>
 
@@ -64,22 +64,29 @@
             </div>
 
             <table>
-                <th>번호</th>
+                <th>NO</th>
                 <th>상품명</th>
-                <th>재고</th>
-                <th>판매</th>
-                <th colspan="2">관리</th>
+                <th>이름</th>
+                <th>리뷰 내용</th>
+                <th>작성 날짜</th>
+                <th>평점</th>
+                <th>관리</th>
                 <tr>
                     <td>1</td>
                     <td>
                         <input class="input input-full" placeholder="내용을 입력하세요" value="카샤카샤 잠자리 모양" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="123" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="김우영" />
                     </td>
-                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="약해요,, 하루만에 부러져요" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="1" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -91,11 +98,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="원형 스크래쳐" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="75" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="노희재" />
                     </td>
-                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="두마리가 낑겨 들어가네욬ㅋㅋ" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -107,13 +119,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="생식본능 얼티밋 치킨" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="64" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="이병민" />
                     </td>
                     <td>
-                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="금사료,, 내 밥보다 비쌈" />
                     </td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2.5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -125,13 +140,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="앙모볼 6p" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="345" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="이슬기" />
                     </td>
                     <td>
-                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="쇼파밑에 우르르 ㅎㅎ" />
                     </td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -143,11 +161,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="에버크린 무향 모래" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="233" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="전찬민" />
                     </td>
-                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="향은 잘잡아주는데 사막화는,, ㅠ" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="4" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -159,13 +182,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="버박 고양이 치약" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="137" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="스투키" />
                     </td>
                     <td>
-                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="치약이 간식인줄 아네요,," />
                     </td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -177,11 +203,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="상어 쿠션집" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="183" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="팀장님" />
                     </td>
-                    <td><input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked /></td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="안에 안들어가고 위에 앚아요ㅠㅠ" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="4" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -193,13 +224,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="부들부들 실리콘 빗" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="223" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="디자이너" />
                     </td>
                     <td>
-                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="부들부들하고 애기가 좋아해요!" />
                     </td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -211,13 +245,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="장난감 - 레이저" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="33" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="코난" />
                     </td>
                     <td>
-                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="좀 가지고 놀더니 질려하네요" />
                     </td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2.5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>
@@ -229,13 +266,16 @@
                         <input class="input input-full" placeholder="내용을 입력하세요" value="고양이 인식표 성묘용" />
                     </td>
                     <td>
-                        <input class="input input-full" placeholder="내용을 입력하세요" value="14" />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="모카" />
                     </td>
                     <td>
-                        <input class="checkbox" type="checkbox" name="checkbox-example" value="checkbox-example-value" checked />
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="기껏 키웠더니 잘 안먹어요" />
                     </td>
                     <td>
-                        <button class="btn btn-full" data-alert="edit">수정</button>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="2021-12-25" />
+                    </td>
+                    <td>
+                        <input class="input input-full" placeholder="내용을 입력하세요" value="1.5" />
                     </td>
                     <td>
                         <button class="btn btn-full btn-danger" data-alert="del">삭제</button>

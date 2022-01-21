@@ -1,0 +1,91 @@
+/* 공통 영역 
+-------------------------------------------*/
+
+.finish-container {
+    border: 1px solid var(--gray300);
+    padding: 20px;
+    position: relative;
+}
+
+.finish-container > div {
+    padding: 30px 0;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* 결제페이지 타이틀
+-------------------------------------------*/
+
+.status-now {
+    color: var(--primary);
+    width: 1100px;
+}
+
+.finish-container > .pay-status {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 200px;
+    padding: 0;
+}
+
+.finist-text {
+    text-align: center;
+    margin-top: 15px;
+}
+/* 배송지 입력 란
+-------------------------------------------*/
+
+.finish-info {
+    width: 1100px;
+    background-color: var(--gray100);
+    padding: 30px;
+}
+
+.sub-list > span:first-child {
+    color: var(--gray500);
+    display: inline-block;
+    width: 150px;
+    margin-left: 40px;
+}
+
+.sub-list {
+    padding: 10px;
+}
+
+/* 최종 결재 금액
+-------------------------------------------*/
+
+.price-box {
+    border-top: 2px solid var(--gray500);
+}
+
+.price-box > div {
+    border-bottom: 1px solid var(--gray200);
+}
+
+.price-box > div > span {
+    display: inline-block;
+    text-indent: 30px;
+}
+
+.pay-sub {
+    width: 180px;
+    height: 55px;
+    background-color: var(--gray100);
+    line-height: 55px;
+}
+
+/* 결제 동의 및 결제하기
+-------------------------------------------*/
+.pay-final {
+    text-align: center;
+}
+
+.pay-btn {
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+}

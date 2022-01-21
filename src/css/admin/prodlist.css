@@ -34,3 +34,68 @@ td:nth-child(5) {
 td:nth-child(6) {
     width: 100px;
 }
+/* modal */
+.btn-modal {
+    width: 25px;
+    height: 25px;
+    margin-left: 750px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+.modal {
+}
+.modal-container {
+    border-radius: 5px;
+    width: 600px;
+    padding: 50px;
+    background-color: var(--gray100);
+    position: fixed;
+    top: 120px;
+    left: calc(50% - 300px);
+    z-index: 2000;
+    box-shadow: 5px 5px 15px 5px var(--gray400);
+}
+.title {
+    margin-bottom: 25px;
+}
+.sub-title {
+    margin-bottom: 20px;
+}
+.modal-close {
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: right;
+}
+.modal-full {
+    padding: 5px;
+    margin: 15px 0;
+}
+.modal-half {
+    padding: 5px;
+    width: calc(50% - 10px);
+    float: left;
+    margin: 15px 0;
+}
+.modal-select {
+    width: 290px;
+    padding: 5px;
+}
+.modal-textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+.bg-black {
+    position: fixed;
+    top: 0;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray600);
+    opacity: 0.1;
+}
