@@ -1,0 +1,120 @@
+
+/* 상품 정보란 */
+.prod-info-container {
+    border: 1px solid var(--gray300);
+    padding: 30px 0 30px 0;
+}
+
+.prod-info-inner {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod-info {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prod-img img{
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* 정보 속 별점 관련 */
+.star-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.star-avg {
+    margin: 10px 0 10px 0;
+}
+
+.star-avg p{
+    display: inline;
+}
+
+.review-count {
+    color: var(--gray300);
+}
+
+.material-icons-outlined {
+    color: var(--yellow);
+}
+
+/* 후기 내용 작성칸*/
+.write-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.write-box {
+    border: 1px solid var(--gray300);
+    border-radius: 5px;
+    width: 900px;
+    margin: 50px 0 50px 0;
+    padding: 42px 0 42px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.write-box p {
+    display: inline-block;
+    color: var(--gray400);
+    padding: 10px 0 0 50px;
+}
+
+.write-box img{
+    width: 40px;
+    padding-right: 50px;
+}
+
+/* 버튼 관련 */
+.btn-container {
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.star-btn {
+    background-color:var(--white);
+    width: 200px;
+    padding: 15px;
+}
+
+.submit-btn {
+    background-color:var(--primary);
+    color: var(--white);
+    width: 200px;
+    padding: 15px;
+}
+
+/* 후기 갯수 */
+.review-container {
+    margin-bottom: 70px;
+}
+
+.review-count-bar {
+    border-bottom: 1px solid var(--gray300);
+    padding-bottom: 15px;
+}
+
+.review-count-bar p {
+    display: inline-block;
+}
+
+.review-count {
+    color: var(--black);
+}
+
+.review-count-text {
+    color: var(--gray400);
+}
