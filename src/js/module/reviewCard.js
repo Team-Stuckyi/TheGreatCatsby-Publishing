@@ -34,6 +34,8 @@ function reviewCardComponents() {
         <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
 
         <style>
+
+        /* 리뷰 카드 영역 */
         .review-card {
             margin-top: 25px;
             padding-bottom: 20px;
@@ -41,14 +43,26 @@ function reviewCardComponents() {
             display: flex;
         }
 
+        /* 이미지 크기 */
         .review-card img {
             width: 120px;
         }
 
+        /* 리뷰 작성시 상품 정보 영역 */
         .review-info-container {
             display: flex;
             flex-direction: column;
             margin-left: 30px;
+        }
+
+        .review-info {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .review-info ul {
+            display: flex;
+            flex-direction: row;
         }
 
         .review-card li, .review-username {
@@ -65,20 +79,12 @@ function reviewCardComponents() {
             border-right: none;
         }
 
-        .review-info {
-            display: flex;
-            flex-direction: row;
-        }
-
+        /* 별 색상 */
         .material-icons-outlined {
             color: var(--yellow);
         }
 
-        .review-info ul {
-            display: flex;
-            flex-direction: row;
-        }
-
+        /* 문단별 여백 */
         .review-info-container p {
             padding: 3px 0 3px 0;   
         }
