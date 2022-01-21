@@ -1,7 +1,7 @@
 function cardComponents() {
     const htmlTemplate = `
     <li class="prod-card">
-        <span><img src="src/img/user/index/image1.jpg"></span>
+        <span><img src="/TheGreatCatsby-Publishing/src/img/user/index/image1.jpg"></span>
         <p class="text-sm">캣츠파인푸드 퓨레 No.107 캥거루 파우치 85g</p>
         <span class="material-icons-outlined text-sm"> star </span>
         <span class="material-icons-outlined text-sm"> star </span>
@@ -17,9 +17,9 @@ function cardComponents() {
             href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="src/css/reset.css" />
-        <link rel="stylesheet" href="src/css/common.css" />
-        <link rel="stylesheet" href="src/css/user/tag.css" />
+        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
+        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
+        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
 
         <style>
         /* 카드 영역 설정 */
