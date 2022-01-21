@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/button.css" />
     <style>
 
+        /* 상품 정보란 */
         .prod-info-container {
             border: 1px solid var(--gray300);
             padding: 30px 0 30px 0;
@@ -40,11 +41,7 @@
             margin-top: 20px;
         }
 
-        .review-container {
-            display: flex;
-            justify-content: space-between;
-        }
-
+        /* 정보 속 별점 관련 */
         .star-container {
             height: 300px;
             display: flex;
@@ -69,12 +66,17 @@
         }
 
         /* 후기 내용 작성칸*/
+        .write-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .write-box {
             border: 1px solid var(--gray300);
             border-radius: 5px;
             width: 900px;
             margin: 50px 0 50px 0;
-            padding: 50px 0 50px 0;
+            padding: 42px 0 42px 0;
             display: flex;
             justify-content: space-between;
         }
@@ -90,6 +92,7 @@
             padding-right: 50px;
         }
 
+        /* 버튼 관련 */
         .btn-container {
             margin: 50px 0 50px 0;
             display: flex;
@@ -109,10 +112,46 @@
             width: 200px;
             padding: 15px;
         }
-        
+
+        /* 후기 갯수 */
+        .review-count-bar {
+            border-bottom: 1px solid var(--gray300);
+            padding-bottom: 15px;
+        }
+
+        .review-count-bar p {
+            display: inline-block;
+        }
+
+        .review-count {
+            color: var(--black);
+        }
+
+        .review-count-text {
+            color: var(--gray400);
+        }
+
+        /* 페이지네이션 영역 */
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+
+        .pagination img {
+            width: 12px;
+        }
+
+        .page-num {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
     </style>
 </head>
 <body>
+    <header-components></header-components>
+
     <contents>
         <div class="container">
             <div class="prod-info-container">
@@ -128,7 +167,7 @@
                         <p class="star-text text-base">평점</p>
                         <div class="star-avg">
                             <p class="text-4xl">4.9 </p>
-                            <p class="review-count text-sm">(1,842)</p>
+                            <p class="review-count text-sm">(24)</p>
                         </div>
                         <div class="star-count">
                             <span class="material-icons-outlined text-2xl"> star </span>
@@ -140,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="review-container">
+            <div class="write-container">
                 <div class="write-box">
                     <p class="text-base">구매 후기를 남겨주세요 :) (최소 50자 이상)</p>
                     <span><img src="/TheGreatCatsby-Publishing/src/img/user/review/pic_add.png"></span>
@@ -156,11 +195,37 @@
                 <button class="submit-btn">
                     <p class="text-base">등록</p>
                 </button>
+                </div>
+            </div>
+            <div class="review-count-bar">
+                <p class="review-count text-sm">24 </p>
+                <p class="review-count-text text-sm">개의 후기</p>
+            </div>
+            <div class="review-container">
+                <div class="review-inner">
+                    <review-card-components></review-card-components>
+                    <review-card-components></review-card-components>
+                    <review-card-components></review-card-components>
+                    <review-card-components></review-card-components>
+                    <review-card-components></review-card-components>
+                </div>
             </div>
             </div>
-            
+            <div class="pagination-container">
+                <ul class="pagination">
+                    <li class="page-num">1</li>
+                    <li class="page-num">2</li>
+                    <li class="page-num">3</li>
+                    <img src="/TheGreatCatsby-Publishing/src/img/user/index/right-arrow.png">
+                </ul>
+            </div>
         </div>
     </contents>
+
+    <footer-components></footer-components>
     
+    <script type="module" src="../../js/module/header.js"></script>
+    <script type="module" src="../../js/module/footer.js"></script>
+    <script type="module" src="../../js/module/reviewCard.js"></script>
 </body>
 </html>
