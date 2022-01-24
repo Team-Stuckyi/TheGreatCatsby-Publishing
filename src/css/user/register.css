@@ -27,9 +27,33 @@
 .register-passsucces > p {
     margin-bottom: 5px;
 }
-/** btton색깔 */
+/** button색깔 */
 .button-register {
     background-color: var(--primary);
-    color: var(--white);
     margin-top: 30px;
+}
+/* button 안 글자 색 */
+.button-register > a {
+    color: var(--white);
+}
+/* input::placeholde - padding */
+/* Chrome, Firefox, Opera, Safari 구버젼*/
+input::placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+/* Chrome */
+input::-webkit-input-placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+/* IE */
+input:-ms-input-placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+/* Firefox */
+input:-mos-input-placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
 }

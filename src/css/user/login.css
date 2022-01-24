@@ -26,14 +26,37 @@
     margin: 10px 0;
 }
 
+/* input::placeholde - padding */
+/* Chrome, Firefox, Opera, Safari 구버젼*/
+input::placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+/* Chrome */
+input::-webkit-input-placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+/* IE */
+input:-ms-input-placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+/* Firefox */
+input:-mos-input-placeholder {
+    padding: 0 10px;
+    color: var(--gray300);
+}
+
 /* button */
 
 .login-button {
     background-color: var(--primary);
-    color: var(--white);
     margin: 20px 0;
 }
-
+.login-button > a {
+    color: var(--white);
+}
 .button-login {
     width: 450px;
     margin: auto;
