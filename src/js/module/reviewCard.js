@@ -2,7 +2,7 @@ function reviewCardComponents() {
     const htmlTemplate = `
     <div class="review-card">
         <span>
-            <img src="/TheGreatCatsby-Publishing/src/img/user/index/image1.jpg">
+            <img src="../../img/user/index/image1.jpg">
         </span>
         <div class="review-info-container">
             <div class="review-info">
@@ -29,9 +29,9 @@ function reviewCardComponents() {
             href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
-        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
-        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
+        <link rel="stylesheet" href="../../css/reset.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/user/tag.css" />
 
         <style>
 
@@ -86,7 +86,7 @@ function reviewCardComponents() {
 
         /* 문단별 여백 */
         .review-info-container p {
-            padding: 3px 0 3px 0;   
+            padding: 5px 0 5px 0;   
         }
         </style>
 

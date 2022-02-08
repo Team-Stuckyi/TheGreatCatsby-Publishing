@@ -3,15 +3,15 @@ function headerComponents() {
     <header id="header">
         <div class="container">
             <div class="header-inner">
-                <a href="#"><span class="main-logo"><img src="/TheGreatCatsby-Publishing/src/img/user/header/logo1.png"></span></a>
-                <a href="#"><span class="input-login"><img src="/TheGreatCatsby-Publishing/src/img/user/header/login.png"><p class="text-sm">Login</p></span></a>
+                <a href="../../page/user/index.html"><span class="main-logo"><img src="../../img/user/header/logo1.png"></span></a>
+                <a href="../../page/user/login.html"><span class="input-login"><img src="../../img/user/header/login.png"><p class="text-sm">Login</p></span></a>
             </div>
         </div>    
     </header>
     `;
     const cssTemplate = `
-            <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
-            <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
+            <link rel="stylesheet" href="../../css/reset.css" />
+            <link rel="stylesheet" href="../../css/common.css" />
             <style>
             /* 공통 */
             body {

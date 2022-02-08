@@ -11,9 +11,9 @@ function paginationComponents() {
             href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
-        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
-        <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
+        <link rel="stylesheet" href="../..//css/reset.css" />
+        <link rel="stylesheet" href="../..//css/common.css" />
+        <link rel="stylesheet" href="../..//css/user/tag.css" />
 
         <style>
         /* 페이지네이션 영역 */
@@ -49,8 +49,8 @@ function paginationComponents() {
     const prevBtn = document.createElement('img');
     const nextBtn = document.createElement('img');
 
-    prevBtn.src = "/TheGreatCatsby-Publishing/src/img/user/index/left-arrow.png"
-    nextBtn.src = "/TheGreatCatsby-Publishing/src/img/user/index/right-arrow.png"
+    prevBtn.src = "../../img/user/index/left-arrow.png"
+    nextBtn.src = "../..//img/user/index/right-arrow.png"
     prevBtn.classList.add('prev-btn');
     nextBtn.classList.add('next-btn');
 

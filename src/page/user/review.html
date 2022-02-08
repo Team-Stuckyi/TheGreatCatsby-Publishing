@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>위대한 캣츠비 - 리뷰페이지</title>
     <link
             href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
             rel="stylesheet"
         />
-    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/reset.css" />
-    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/common.css" />
-    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/tag.css" />
-    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/button.css" />
-    <link rel="stylesheet" href="/TheGreatCatsby-Publishing/src/css/user/review.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/user/tag.css" />
+    <link rel="stylesheet" href="../../css/user/button.css" />
+    <link rel="stylesheet" href="../../css/user/review.css" />
 </head>
 <body>
     <header-components></header-components>
@@ -47,17 +47,19 @@
             </div>
             <div class="write-container">
                 <div class="write-box">
-                    <p class="text-base">구매 후기를 남겨주세요 :) (최소 50자 이상)</p>
-                    <span><img src="/TheGreatCatsby-Publishing/src/img/user/review/pic_add.png"></span>
-                </div>
+                   <input type="text" placeholder="구매 후기를 남겨주세요 :) (최소 50자 이상)" class="write-text"></input> 
+                   <span class="add_pic"><img src="../../img/user/review/pic_add.png"></span>
+                </div>    
                 <div class="btn-container">
-                <button class="star-btn">
-                    <span class="material-icons-outlined text-2xl"> star </span>
-                    <span class="material-icons-outlined text-2xl"> star </span>
-                    <span class="material-icons-outlined text-2xl"> star </span>
-                    <span class="material-icons-outlined text-2xl"> star </span>
-                    <span class="material-icons-outlined text-2xl"> star_rate </span>
-                </button>
+                <form name="star-form" id="star-form" class="star-btn">
+                    <fieldset>
+                        <input type="radio" name="rating" value="5" id="rate1"><label for="rate1" class="material-icons-outlined text-2xl"> star </label>
+                        <input type="radio" name="rating" value="4" id="rate2"><label for="rate2" class="material-icons-outlined text-2xl"> star </label>
+                        <input type="radio" name="rating" value="3" id="rate3"><label for="rate3" class="material-icons-outlined text-2xl"> star </label>
+                        <input type="radio" name="rating" value="2" id="rate4"><label for="rate4" class="material-icons-outlined text-2xl"> star </label>
+                        <input type="radio" name="rating" value="1" id="rate5"><label for="rate5" class="material-icons-outlined text-2xl"> star </label>
+                    </fieldset>
+                </form>
                 <button class="submit-btn">
                     <p class="text-base">등록</p>
                 </button>
@@ -86,6 +88,6 @@
     <script type="module" src="../../js/module/header.js"></script>
     <script type="module" src="../../js/module/footer.js"></script>
     <script type="module" src="../../js/module/reviewCard.js"></script>
-    <script type="module" src="/TheGreatCatsby-Publishing/src/js/module/paginationComponents.js"></script>
+    <script type="module" src="../../js/module/paginationComponents.js"></script>
 </body>
 </html>
